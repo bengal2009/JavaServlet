@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="LocalTest">
+    <output-path>$PROJECT_DIR$/out/artifacts/LocalTest</output-path>
+    <root id="archive" name="LocalTest.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="untitled1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="untitled1/web/Web" />
+    </root>
+  </artifact>
+</component>
