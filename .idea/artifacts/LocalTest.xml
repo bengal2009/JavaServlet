@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="LocalTest">
+  <artifact type="exploded-war" build-on-make="true" name="LocalTest">
     <output-path>$PROJECT_DIR$/out/artifacts/LocalTest</output-path>
-    <root id="archive" name="LocalTest.war">
+    <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="untitled1" />

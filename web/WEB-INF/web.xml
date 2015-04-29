@@ -4,6 +4,10 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
     <servlet>
+        <servlet-name>StudentServlet</servlet-name>
+        <servlet-class>json.com.StudentServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>lin.com.Hello</servlet-class>
     </servlet>
@@ -29,5 +33,9 @@
     <servlet-mapping>
         <servlet-name>HelloWorldServlet</servlet-name>
         <url-pattern>/HelloWorldServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentServlet</servlet-name>
+        <url-pattern>/StudentServlet</url-pattern>
     </servlet-mapping>
 </web-app>
