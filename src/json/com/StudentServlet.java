@@ -17,7 +17,7 @@ import java.util.List;
 public class StudentServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        secondMethod(request,response);
+        firstMethod(request,response);
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)

@@ -1,47 +1,29 @@
 package lin.com;
-
-import java.io.PrintWriter;
-
-import java.sql.*;
-
-import java.util.*;
-
-
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 /**
- * Created by Lin on 2015/4/27.
+* Created by Lin on 2015/4/27.
  * http://caoyu-google.iteye.com/blog/2008327
  */
 public class JsonService {
     public static List<Person> getListPerson(){
-
-
-
         String a,b,allString ="";
         int c = 0;
-
         List<Person> mLists = new ArrayList<Person>();
-
 //      List<Person> mLists = new ArrayList<Person>();
-
-//      mLists.add(new Person(¡§??¡¨, ¡§¥_¨Ê¡¨, 20));
-
+//      mLists.add(new Person(ï¿½ï¿½??ï¿½ï¿½, ï¿½ï¿½ï¿½_ï¿½Ê¡ï¿½, 20));
         System.out.println(mLists);
-
         try {
-
-            Class.forName("com.mysql.jdbc.Driver");//?±µ?Õu?
+            Class.forName("com.mysql.jdbc.Driver");//?ï¿½ï¿½?ï¿½u?
             Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/json", "root" , "123456");
 
             Statement stmt = conn.createStatement();
-
-            ResultSet rs = stmt.executeQuery("select * from people");//¹M??Õu?
-
-
-
+            ResultSet rs = stmt.executeQuery("select * from people");//ï¿½M??ï¿½u?
             Person p = null;
-
-
-
             while(rs.next())
 
             {
@@ -61,8 +43,7 @@ public class JsonService {
                 c = rs.getInt(3);
 
 
-
-                mLists.add(new Person(a, b, c));//²K¥[¨ìList¤¤
+                mLists.add(new Person(a, b, c));//ï¿½Kï¿½[ï¿½ï¿½Listï¿½ï¿½
 
             }
 
@@ -94,7 +75,7 @@ public class JsonService {
 
     }
 
-    //??¥Î¥D¨ç?
+    //??ï¿½Î¥Dï¿½ï¿½?
 
     public static void main(String[] args) throws Exception
 
@@ -114,7 +95,7 @@ public class JsonService {
 
 
 
-//      str = temp.split(¡¨ ¡§);
+//      str = temp.split(ï¿½ï¿½ ï¿½ï¿½);
 
 //      for(int i = 0 ; i < str.length ; i++){
 
