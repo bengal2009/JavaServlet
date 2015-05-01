@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="benjavalib">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../javatest/benjavalib.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
