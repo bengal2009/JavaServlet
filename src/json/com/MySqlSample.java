@@ -18,7 +18,7 @@ public class MySqlSample {
         try {
             Class.forName("com.mysql.jdbc.Driver");// ?接?据?
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://127.0.0.1:3306/json", "root", "123456");
+                    "jdbc:mysql://127.0.0.1:3306/benny", "benny", "1234");
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery("select * from people");// 遍??据?
 

@@ -8,6 +8,10 @@
         <servlet-class>json.com.StudentServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>MySqlPerson</servlet-name>
+        <servlet-class>json.com.MySqlPerson</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>lin.com.Hello</servlet-class>
     </servlet>
@@ -37,5 +41,9 @@
     <servlet-mapping>
         <servlet-name>StudentServlet</servlet-name>
         <url-pattern>/StudentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MySqlPerson</servlet-name>
+        <url-pattern>/MySqlPerson</url-pattern>
     </servlet-mapping>
 </web-app>
